@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'SF UI Text';
+    src: url(fonts/SFUITEXT-REGULAR.OTF);
+}
+
+@font-face {
+    font-family: 'SF UI Text Bold';
+    src: url(fonts/SFUITEXT-BOLDG3.OTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'SF UI Text';
+}
+
+#logoTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#hamburgerIcon {
+    width: 40px;
+}
+
+li {
+    color: white;
+}
+
+#projectMainTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#project1Title {
+    font-family: 'SF UI Text Bold';
+}
+
+#project1Container img {
+    height: 350px;
+}
+
+#mainButtons {
+    border-radius: 48px;
+}
+
+#footerMainTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#navFooterTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#rescFooterTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#navThings p {
+    font-family: 'SF UI Text Bold';
+}
+
+#navFooterTitle2 {
+    font-family: 'SF UI Text Bold';
+}
+
+#rescFooterTitle2 {
+    font-family: 'SF UI Text Bold';
+}
+
+#navThings2 p {
+    font-family: 'SF UI Text Bold';
+}
