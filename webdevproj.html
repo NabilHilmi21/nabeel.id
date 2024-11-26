@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="webdevproj.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="webdevproj.js"></script>
+</head>
+<body class="bg-black">
+    
+    <!--THIS IS NAVBAR-->
+
+    <nav class="mt-6 ml-8 mr-8 sm:ml-8 sm:mr-8 md:ml-8 md:mr-8 lg:ml-24 lg:mr-24 flex justify-between" id="mainNavbar">
+        <h1 id="logoTitle" class="text-white text-3xl">Nabeel</h1>
+        <img class="block sm:block md:hidden xl:hidden" id="hamburgerIcon" onclick=openHamburg() src="images/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="">
+        <ul class="flex hidden sm:hidden md:flex xl:flex">
+            <li class="mr-6 transition hover:text-blue-600 duration-300"><a href="#">Home</a></li>
+            <li class="mr-6 transition hover:text-blue-600 duration-300"><a href="index.html#aboutMeContainer">About</a></li>
+            <li class="mr-6 transition hover:text-blue-600 duration-300"><a href="projgallery.html">My projects</a></li>
+            <li class="mr-6 transition hover:text-blue-600 duration-300"><a href="contactme.html">Contact me</a></li>
+        </ul>
+    </nav>
+    
+    <!--THIS IS HAMBURGER MENU-->
+
+    <nav class="bg-black p-8" id="hamburgerBg">
+        <h1 class="text-white mb-4 text-3xl" id="hamburgerTitle">Nabeel</h1>
+
+        <hr class="block lg:hidden" id="hamburgerLine">
+
+        <ul class="mt-4">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#aboutMeContainer" onclick="closeHamburg()">About</a></li>
+            <li><a href="projgallery.html">My projects</a></li>
+            <li><a href="contactme.html">Contact me</a></li>
+        </ul>
+
+        <img src="images/arrow-back.png" class="mt-4 text-3xl" onclick="closeHamburg()" alt="">
+    </nav>
+
+    <!--THIS IS MY MAIN SECTION-->
+
+    <p class="text-gray-400 text-center mt-24">Project Gallery</p>
+    <h1 id="projectMainTitle" class="text-white text-center text-4xl mb-12">Web Development</h1>
+    
+    <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 ml-8 mr-8 lg:ml-24 lg:mr-24 xl:ml-48 xl:mr-48 mt-16 lg:mt-24">
+
+        <div class="flex flex-col" id="project1Container">
+            <img src="images/Web Dev Proj Images/bojongrobot.png" alt="" class="w-base md::w-2/3 xl:w-base mx-auto rounded-2xl">
+            <div class="flex flex-col mt-6" >
+                <h1 class="text-white text-2xl sm:text-4xl" id="project1Title">Bojong Robot</h1>
+                <p class="text-gray-400 mt-4 hidden lg:block" id="bojongRobotP">My friends and I created this website for a national web design competition, 
+                        featuring 3D augmented reality for e-commerce. It showcases our skill in blending technology with practical, user-friendly solutions.</p>
+                <p class="text-zinc-600 block lg:hidden" id="viewmoreBR" onclick="openBRP()">View more</p>
+                <p class="text-zinc-600 hidden mt-4" id="viewlessBR" onclick="closeBRP()">View less</p>
+                
+                <button class="bg-blue-600 w-base sm:w-2/5 lg:w-1/2 transition hover:bg-blue-700 duration-300 text-white text-center pt-4 pb-4 lg:pt-4 lg:pb-4 mt-6" id="mainButtons"><a href="https://ditradit.github.io/barudakbojongsoang/">View Demo</a></button>
+            </div>
+        </div>
+
+        <div class="flex flex-col" id="project1Container">
+            <img src="images/Web Dev Proj Images/bojongcodes.png" alt="" class="w-base md::w-2/3 xl:w-base mx-auto rounded-2xl">
+            <div class="flex flex-col mt-6" >
+                <h1 class="text-white text-2xl sm:text-4xl" id="project1Title">EduReng</h1>
+                <p class="text-gray-400 mt-4 hidden lg:block" id="bojongCodesP">My friends and I developed this website to help users learn coding from scratch in multiple programming languages, 
+                    offering a beginner-friendly, step-by-step approach to mastering programming fundamentals.</p>
+
+                <p class="text-zinc-600 block lg:hidden" id="viewmoreBC" onclick="openBCP()">View more</p>
+                <p class="text-zinc-600 hidden mt-4" id="viewlessBC" onclick="closeBCP()">View less</p>
+
+                <button class="bg-blue-600 w-base sm:w-2/5 lg:w-1/2 transition hover:bg-blue-700 duration-300 text-white text-center pt-4 pb-4 lg:pt-4 lg:pb-4 mt-6" id="mainButtons5"><a href="#">View Demo</a></button>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 id="projectMainTitle" class="text-zinc-600 text-center text-3xl sm:text-4xl mt-12">More coming soon...</h1>
+    
+    <div class="flex justify-center">
+        <button class="bg-blue-600 transition hover:bg-blue-700 duration-300 text-white text-center pl-8 pr-8 pt-6 pb-6 mt-24" id="mainButtons"><a href="redo.html">Go to project gallery</a></button>
+    </div>
+
+    <!--FOOTER SECTION-->
+
+    <div class="bg-zinc-900 mt-36">
+        <div class="flex items-center lg:items-start justify-center lg:justify-between flex-col lg:flex-row p-8 lg:p-16">
+            <div class="w-base lg:w-2/5 text-center lg:text-left">
+                <h1 id="footerMainTitle" class="text-white text-4xl">Nabeel</h1>
+                <p class="text-gray-400 mt-4 hidden lg:block">Crafting clean, responsive, and user-friendly websites is my passion. 
+                    As a junior front-end developer, I focus on blending creativity with code to bring ideas to life. Let’s build something great together!</p>
+                <p class="text-gray-400 block lg:hidden mt-4">I create clean, responsive websites that bring ideas to life. Let’s build something great!</p>
+            </div>
+            <div class="flex flex-col lg:flex-row mt-8 lg:mt-0 gap-4 lg:gap-16">
+
+                <!--THIS IS FOR MID TO LARGE SCREENS-->
+
+                <div class="flex flex-col hidden lg:block">
+                    <h1 id="navFooterTitle" class="text-xl text-white">Navigation</h1>
+                    <a href="index.html" class="text-gray-400 transition hover:text-white duration-300 mt-2 hidden lg:block">Home</a>
+                    <a href="index.html#aboutMeContainer" class="text-gray-400 transition hover:text-white duration-300 hidden lg:block">About</a>
+                    <a href="projgallery.html" class="text-gray-400 transition hover:text-white duration-300 hidden lg:block">My projects</a>
+                    <a href="contactme.html" class="text-gray-400 transition hover:text-white duration-300 hidden lg:block">Contact me</a>
+                </div>
+                <div class="flex flex-col hidden lg:block">
+                    <h1 id="rescFooterTitle" class="text-xl text-white">Resources</h1>
+                    <a href="https://drive.google.com/file/d/1E2li6bkpfUQYOw-B6eZNM4vwywd6J0G-/view?usp=sharing" class="text-gray-400 transition hover:text-white duration-300 mt-2 hidden lg:block">My resume</a>
+                    <a href="https://github.com/NabilHilmi21" class="text-gray-400 transition hover:text-white duration-300 hidden lg:block">GitHub</a>
+                </div>
+
+                <!--THIS IS FOR MOBILE-->
+
+                <div class="flex flex-col items-center block lg:hidden">
+                    <h1 id="navFooterTitle2" class="text-xl text-white mb-2" onclick="openNavFoot()">Navigation</h1>
+                    <div id="navThings" class="flex items-center hidden lg:block text-center">
+                        <a href="index.html" class="text-gray-400 mt-2" >Home</a><br>
+                        <a href="index.html#aboutMeContainer" class="text-gray-400" >About</a><br>
+                        <a href="projgallery.html" class="text-gray-400" >My projects</a><br>
+                        <a href="contactme.html" class="text-gray-400" >Contact me</a>
+                        <p class="text-red-400 mt-2 text-2xl" onclick="closeNavFoot()">X</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center block lg:hidden">
+                    <h1 id="rescFooterTitle2" class="text-xl text-white mb-2" onclick="openRescFoot()">Resources</h1>
+                    <div id="navThings2" class="flex items-center hidden lg:block text-center">
+                        <a href="https://drive.google.com/file/d/1E2li6bkpfUQYOw-B6eZNM4vwywd6J0G-/view?usp=sharing" class="text-gray-400 mt-2">My resume</a><br>
+                        <a href="https://github.com/NabilHilmi21" class="text-gray-400">GitHub</a>
+                        <p class="text-red-400 mt-2 text-2xl" onclick="closeRescFoot()">X</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <div class="flex justify-between flex-col lg:flex-row items-center lg:items-start pl-8 pb-8 pr-8 pt-0 lg:pl-16 lg:pb-16 lg:pr-16 lg:pt-0">
+            <div class="hidden lg:block">
+                <p class="text-gray-400">© 2024 Nabeel. All Rights Reserved.</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="https://www.instagram.com/nabilhilmii/"><img src="images/instagram.png" alt=""></a>
+                <a href="mailto:nabilmhilmi21@gmail.com"><img src="images/email.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/nabil-muhammad-hilmi-b73974324/"><img src="images/linkedin.png" alt=""></a>
+                <a href="https://wa.me/6289662824533"><img src="images/whatsapp.png" alt=""></a>
+            </div>
+            <div class="block lg:hidden">
+                <p class="text-gray-400 mt-4">© 2024 Nabeel. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

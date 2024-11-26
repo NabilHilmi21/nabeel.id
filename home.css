@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'SF UI Text';
+    src: url(fonts/SFUITEXT-REGULAR.OTF);
+}
+
+@font-face {
+    font-family: 'SF UI Text Bold';
+    src: url(fonts/SFUITEXT-BOLDG3.OTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'SF UI Text';
+}
+
+#logoTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#mainNavbar {
+    position: sticky;
+}
+
+#hamburgerBg {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    right: -100px;
+    opacity: 0;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.5s ease
+}
+
+#hamburgerBg ul li {
+    font-size: 28px;
+}
+
+#hamburgerIcon {
+    width: 40px;
+}
+
+#hamburgerBg img {
+    width: 40px;
+}
+
+li {
+    color: white;
+}
+
+#hamburgerTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#mainContainer {
+    height: 768px;
+}
+
+#mainTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#mainButtons {
+    border-radius: 48px;
+}
+
+#mainButtons2 {
+    border-radius: 48px;
+}
+
+#aboutme1Img {
+    width: 500px;
+}
+
+#aboutme1Title {
+    font-family: 'SF UI Text Bold';
+}
+
+#codeImagesContainer img {
+    width: 80px;
+}
+
+#codeImagesContainer h1 {
+    font-family: 'SF UI Text Bold';
+}
+
+#IdSkillsMainTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#IdSkillTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#projectMainTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#project1Container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#project1Title {
+    font-family: 'SF UI Text Bold';
+}
+
+#footerMainTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#navFooterTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#rescFooterTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#navThings p {
+    font-family: 'SF UI Text Bold';
+}
+
+#navFooterTitle2 {
+    font-family: 'SF UI Text Bold';
+}
+
+#rescFooterTitle2 {
+    font-family: 'SF UI Text Bold';
+}
+
+#navThings2 p {
+    font-family: 'SF UI Text Bold';
+}

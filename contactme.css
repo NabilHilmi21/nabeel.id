@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'SF UI Text';
+    src: url(fonts/SFUITEXT-REGULAR.OTF);
+}
+
+@font-face {
+    font-family: 'SF UI Text Bold';
+    src: url(fonts/SFUITEXT-BOLDG3.OTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'SF UI Text';
+}
+
+#logoTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#hamburgerBg {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    right: -100px;
+    opacity: 0;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.5s ease
+}
+
+
+#hamburgerBg ul li {
+    font-size: 28px;
+}
+
+#hamburgerIcon {
+    width: 40px;
+}
+
+#hamburgerBg img {
+    width: 40px;
+}
+
+li {
+    color: white;
+}
+
+#hamburgerTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#inputTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#contactTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#inputWrapper {
+    border-radius: 28px;
+}
+
+@media (max-width: 1024px) {
+    
+    #inputWrapper {
+        border-radius: 0;
+    }
+}
+
+input {
+    background-color: transparent;
+    border-bottom: 2px solid rgb(82 82 91);
+    outline: none;
+}
+
+textarea {
+    background-color: transparent;
+    border-bottom: 2px solid rgb(82 82 91);
+    outline: none;
+    height: 280px;
+}
+
+#mainButtons {
+    border-radius: 48px;
+}
+
+#footerMainTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#navFooterTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#rescFooterTitle {
+    font-family: 'SF UI Text Bold';
+}
+
+#navThings p {
+    font-family: 'SF UI Text Bold';
+}
+
+#navFooterTitle2 {
+    font-family: 'SF UI Text Bold';
+}
+
+#rescFooterTitle2 {
+    font-family: 'SF UI Text Bold';
+}
+
+#navThings2 p {
+    font-family: 'SF UI Text Bold';
+}
